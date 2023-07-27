@@ -30,19 +30,15 @@ p{
 span{font-weight: 400;
     color:rgba(75, 76, 95, 1);
     font-size: 14px;
-
 }
-.red{
-    
-
-}
+/* .red{
+    margin-bottom: 13px;
+} */
 .red:hover{
     color: rgba(244, 123, 86, 1);
     cursor: pointer;
 }
-
-
-.select{
+.choise .red{
     color:rgba(30, 31, 54, 1);
     font-weight: 700;
  
@@ -50,8 +46,11 @@ span{font-weight: 400;
 .text-hidden{
     line-height: 18px;
     font-size: 12px;
-
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
+    /* display: none; */
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;;
 }
 
 /* =================================== */
@@ -135,12 +134,12 @@ body {
     height: 286px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
+    justify-content: flex-start;
 } 
  .text{
     display: flex;
     flex-direction: column;
+    
  
 }
 .header{
@@ -149,12 +148,14 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 19px;
     text-decoration: none;
 }
 .line{
+    margin-top: 15px;
+    margin-bottom: 15px;
     width: 350px;
     border-top: 1px solid rgba(151, 151, 151, 1);
+    
 }
  .v{
     width: 14px;
@@ -166,4 +167,17 @@ body {
     cursor: pointer;
     padding:0;
     display: inline-block;
+    transition: all 0.25s ease-in-out;;
 } 
+.choise .v{
+    transform: scaleY(-1);
+}
+.text-hidden{
+  
+    margin-bottom: 1px;
+}
+/* =================================== */
+.choise .text-hidden {
+   height: 100%;
+   margin-top: 11px;
+}
